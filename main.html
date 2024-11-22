@@ -4,9 +4,90 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		body{
+			background-color: #f5f5f5;
+		}
+	.container{
+		margin-top:0px;
+	}
+	.header{
+		height:50px;
+		background-color:#011e29;
+		color:white;
+		justify-content:center;
+		text-align:center;
+		font-size:30px;
+	}
+	.container2{
+		display:grid;
+		grid-template-columns:100px 150px fr;
+		grid-template-rows:auto fr auto;
+		grid-template-areas:
+			"latestnews mainarticle picture"
+	}
+		.latest-news-section{
+			background-color:white;
+			width:100px;
+			font-size:10px;
+			height:100px;
+			margin-top:10px
+		}
+		.mainarticle{
+			height:150px;
+			background-color:white;
+			width:300px;
+		}
+		.pictorial-news-section{
+			background-color:white;
+			
+		}
+		.picture img{
+			max-width:200px;
+		}
+
+		
+	</style>
+	
 </head>
 
 <body>
+	<div class="container">
+		<header class="header">Shaw's News</header>
+	</div>
+	<div class="container2">
+	<div class="latest-news-section"> 
+		<h3>Latest News Articles</h3>
+		<ul>
+			<li class="item item1">Arcticle1</li>
+			<li class="item item2">Article2</li>
+			<li class="item item3">Article3</li>
+		</ul>
+	</div>
+		<div class="mainarticle">
+			<h2>Main Article</h2>
+			<p>this is paragraph</p>
+		</div>
+		<div class="pictorial-news-section">
+			<h3>Pictorial News</h3>
+			<img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg">
+			<img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG">
+			<img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG">
+				</div>
+		
+		
+
+
+
+
+		
+	</div>
+
+
+
+
+
+	
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
